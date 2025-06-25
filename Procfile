@@ -1,1 +1,1 @@
-﻿web: python load_balancer.py
+web: python game_server.py
