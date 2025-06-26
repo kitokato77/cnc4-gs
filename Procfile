@@ -1,1 +1,2 @@
-web: python game_server.py
+web: python game_server.py --port=8080
+ 
