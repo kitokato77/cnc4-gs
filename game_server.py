@@ -5,10 +5,8 @@ import threading
 import uuid
 import urllib.parse
 import redis
-import os
 
-redis_url = os.getenv("REDIS_URL")
-redis_client = redis.from_url(redis_url, decode_responses=True)
+redis_client = redis.Redis.from_url("redis-cli --tls -u redis://default:ASzKAAIjcDEzNTJlMDIzOTcxYTU0YTlkYTIzZDE3Y2YyNWVkNGMxY3AxMA@engaging-mayfly-11466.upstash.io:6379")
 
 class GameServerHandler(http.server.BaseHTTPRequestHandler):
     def _set_headers(self, status=200):
