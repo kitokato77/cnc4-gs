@@ -1,2 +1,1 @@
-﻿redis
-requests
+redis==5.0.1
